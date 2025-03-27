@@ -34,19 +34,29 @@ ConnectTel Telecom seeks to reduce customer churn by developing a machine learni
    - **Solution**: SMOTE oversampling and class-weighted models.  
 2. **Sparse Categorical Features**: High dimensionality from one-hot encoding.  
    - **Solution**: Aggregated low-frequency categories and feature selection.  
-3. **Metric Trade-offs**: Balancing recall (catch churners) vs. precision (minimize costs).  
-   - **Solution**: Prioritized recall after validating business costs.
+
   
 ### **False Negatives vs. True Positives**  
 ConnectTel should prioritize **reducing false negatives** (missed churners) because:  
 1. **Cost of Churn**:  
    - **Lost Revenue**: High-value customers contribute significantly to recurring revenue.  
-   - **Acquisition Cost**: Replacing a customer costs 5x more than retention.  
+   - **Acquisition Cost**: Replacing a customer may cost 5x more than retention.  
 2. **Strategic Impact**:  
-   - A 10% reduction in churn could save ~$2M annually (estimated from industry benchmarks).  
+   - A 10% reduction in churn could save the company resources.  
 3. **Reputation**:  
    - Loyal customers drive referrals; losing them damages brand equity.
-  
+
+### Recommendation
+
+-   **Targeted Retention Campaigns:**
+Focus on high-risk customer segments identified by the model — particularly those on monthly contracts with high charges and low tenure.
+
+-   **Incentivize Long-Term Contracts:**
+Offer discounts or perks for customers to move from month-to-month to annual contracts.
+
+-   **Monitor Key Predictors:**
+Keep a close watch on churn-influencing features like customer service calls, internet service issues, and tenure to catch early warning signs.
+ 
 ### Conclusion
 
 This machine learning solution equips ConnectTel with a data-driven approach to customer retention. By implementing targeted intervention strategies based on churn predictions, ConnectTel can reduce customer attrition, enhance customer satisfaction, and maintain a strong competitive edge in the telecommunications industry. Continuous monitoring and model retraining will be essential to adapting to evolving customer behaviors.
